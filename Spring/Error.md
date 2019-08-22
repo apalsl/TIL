@@ -2,5 +2,9 @@
 
 
 
-![error1](../img/Http11Processor.PNG)
+![ERROR_1](../img/Http11Processor.PNG)
 
+'''
+ERROR_1  
+http를 입력해야 하는데 https로 입력하였을 때 발생함.
+'''
