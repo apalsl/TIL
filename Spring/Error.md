@@ -2,5 +2,5 @@
 
 
 
-![error1](./img/Http11Processor.PNG)
+![error1](../img/Http11Processor.PNG)
 
