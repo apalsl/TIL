@@ -26,3 +26,13 @@ ContextConfiguration도 마찬가지, 사진속 Configuration은 test용이 아�
 			<version>5.1.1.RELEASE</version>
 		</dependency>
 ```
+
+![ERROR_3](../img/Url.PNG)
+
+```
+ERROR_3  
+gradle이나 maven 라이브러리에  
+org.springframework.boot:spring-boot-start-jdbc  또는 data-jpa가 존재하는데
+db class path가 입력되지 않았다면 다음과 같은 에러가 발생함.
+```
+
