@@ -46,3 +46,15 @@ application.properties 설정이 적용안되는 버그를 발견.
 Reimport하면 jar file은 추가되지만 properties는 적용되지 않는다.
 
 ```
+
+![ERROR_5](../img/IdAnnotation.PNG)
+```
+ERROR_5  
+User 클래스를 JPA와 연동하려는데 위와 같은 에러가 발생하였다.  
+덕분에 테스트케이스도 돌아가지 않아 하루동안 문제를 찾았다.  
+결론은 @Entity를 선언하였을때 식별자를 선언해줘야 하는데 그것을 @Id로 한다.
+중요한점은 import org.springframework.data.annotation.Id가 아닌 javax.persistance를 선택해야 한다. 
+
+```
+
+![ERROR_5_data](../img/IdImport.PNG)
