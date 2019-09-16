@@ -10,6 +10,7 @@ ERROR_1
 http를 입력해야 하는데 https로 입력하였을 때 발생함.
 ```
 
+---
 
 ![ERROR_2](../img/SpringJUnit4ClassRunner.PNG)
 
@@ -35,6 +36,7 @@ gradle이나 maven 라이브러리에
 org.springframework.boot:spring-boot-start-jdbc  또는 data-jpa가 존재하는데
 db class path가 입력되지 않았다면 다음과 같은 에러가 발생함.
 ```
+---
 
 ![ERROR_4](../img/Gradle.PNG)  
 ```
@@ -46,6 +48,7 @@ application.properties 설정이 적용안되는 버그를 발견.
 Reimport하면 jar file은 추가되지만 properties는 적용되지 않는다.
 
 ```
+---
 
 ![ERROR_5](../img/IdAnnotation.PNG)
 ```
@@ -58,3 +61,14 @@ User 클래스를 JPA와 연동하려는데 위와 같은 에러가 발생하였
 ```
 
 ![ERROR_5_data](../img/IdImport.PNG)
+
+
+---
+
+![ERROR_6](../img/SQL1292.PNG)
+```
+ERROR_6  
+실제 DB와 내가 입력하는 데이터의 포맷이 맞이 않아서 발생하는 에러다.    
+Date포맷 NULL을 "0000-00-00"으로 바꾸라는 방법도 찾았지만 되지 않았다.
+문제는 CreatedBy에 "admin"을 입력했는데 내가 실수로 DB에는 DateTime으로 설정해서였다.
+```
