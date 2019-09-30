@@ -72,3 +72,11 @@ ERROR_6
 Date포맷 NULL을 "0000-00-00"으로 바꾸라는 방법도 찾았지만 되지 않았다.
 문제는 CreatedBy에 "admin"을 입력했는데 내가 실수로 DB에는 DateTime으로 설정해서였다.
 ```
+
+![ERROR_7](../img/StackOverflowError.PNG))
+```
+ERROR_7  
+Lombok에서 지원하는 toString과 List에 있는 toString이 겹쳐서 스택 오버플로우가 발생함.(??무슨말인지 모르겠다)  
+해결방법은 객체를 호출하는 부분, @ManyToOne에서 @ToString(exclude = {"user"}) 형식으로 ToString  기능 제외시켜버리면 된다.
+```
+
